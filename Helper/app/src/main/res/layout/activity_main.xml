@@ -7,7 +7,7 @@
     tools:context="kr.kaist.helper.MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/applicationsButton"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="76dp"
@@ -15,6 +15,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:backgroundTint="@color/colorApplications"
+        android:onClick="openAppList"
         android:text=" Applications"
         android:textAlignment="viewStart"
         android:textAllCaps="false"
@@ -25,7 +26,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/dataSavingButton"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="76dp"
@@ -33,16 +34,17 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/colorDataOFF"
-        android:text=" Data saving: OFF"
+        android:onClick="DataOnOff"
+        android:text=" Data saving: ON"
         android:textAlignment="viewStart"
         android:textAllCaps="false"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/applicationsButton" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/settingsButton"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="76dp"
@@ -50,16 +52,17 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/colorSettings"
+        android:onClick="openSettings"
         android:text=" Settings"
         android:textAlignment="viewStart"
         android:textAllCaps="false"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/dataSavingButton" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/exitButton"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="76dp"
@@ -67,12 +70,13 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/colorExit"
+        android:onClick="exit"
         android:text=" Exit"
         android:textAlignment="viewStart"
         android:textAllCaps="false"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/settingsButton" />
 
 </android.support.constraint.ConstraintLayout>
