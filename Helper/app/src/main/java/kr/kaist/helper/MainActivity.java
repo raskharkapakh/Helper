@@ -1,12 +1,12 @@
 package kr.kaist.helper;
 
 import android.graphics.Color;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
-
 
 public class MainActivity extends AppCompatActivity {
     private boolean dataSavingON;//boolean value use to store if the data is on
