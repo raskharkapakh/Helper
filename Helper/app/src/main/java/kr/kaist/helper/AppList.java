@@ -35,7 +35,7 @@ public class AppList extends AppCompatActivity {
                 skypeAlertBuilder.setNegativeButton("Use Skype", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        OpenApp("com.skype.android");
+                        OpenApp("Skype");
                     }
                 });
                 AlertDialog skypeAlert = skypeAlertBuilder.create();
