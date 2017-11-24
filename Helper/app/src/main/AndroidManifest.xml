@@ -53,7 +53,8 @@
             android:parentActivityName=".SkypeTutorial" />
         <activity
             android:name=".CallSomeoneTutorial1"
-            android:parentActivityName=".SkypeTutorial"></activity>
+            android:parentActivityName=".SkypeTutorial" />
+        <activity android:name=".MicCamTutotorialStep1"></activity>
     </application>
 
 </manifest>
