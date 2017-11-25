@@ -50,10 +50,23 @@
         //Tutorial add contact page 1
         <activity
             android:name=".AddContactTutorial1"
-            android:parentActivityName=".SkypeTutorial" />
+            android:parentActivityName=".SkypeTutorial">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SkypeTutorial" />
+        </activity>
+        Tutorial call someone page 1
         <activity
             android:name=".CallSomeoneTutorial1"
-            android:parentActivityName=".SkypeTutorial"></activity>
+            android:parentActivityName=".SkypeTutorial">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SkypeTutorial" />
+        </activity>
+        <activity android:name=".CallSomeoneTutorial2"></activity>
     </application>
+
+
 
 </manifest>
