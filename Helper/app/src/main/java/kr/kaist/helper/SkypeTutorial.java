@@ -2,19 +2,15 @@ package kr.kaist.helper;
 
 import android.app.ListActivity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-
-/**
- * Created by gaspard on 24/11/17.
- */
-
-import android.content.DialogInterface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+/**
+ * Created by gaspard on 24/11/17.
+ */
 
 public class SkypeTutorial extends ListActivity{
     ListView list;
@@ -52,6 +48,8 @@ public class SkypeTutorial extends ListActivity{
                         break;
                     //Enable/disable microphone and camera during call
                     case 3:
+                        intent = new Intent(SkypeTutorial.this,MicCamTutotorialStep1.class);
+                        startActivity(intent);
                         break;
                     //Have a group call
                     case 4:
