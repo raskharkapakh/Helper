@@ -64,7 +64,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".SkypeTutorial" />
         </activity>
-        <activity android:name=".CallSomeoneTutorial2"></activity>
     </application>
 
 
