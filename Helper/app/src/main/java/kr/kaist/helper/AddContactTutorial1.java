@@ -42,13 +42,6 @@ public class AddContactTutorial1 extends AppCompatActivity {
             instructionImage.setImageResource(R.drawable.addcontact5);
             step++;
         }
-        //testing purpose
-        /*else if (step == 2){
-            stepText.setText("Step 1");
-            instructionText.setText("Instruction 1");
-            instructionImage.setImageResource(R.drawable.addcontact1);
-            step--;
-        }*/
     }
 
     public void goToStep3(View view){
