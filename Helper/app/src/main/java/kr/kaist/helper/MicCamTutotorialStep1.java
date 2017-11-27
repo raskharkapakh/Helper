@@ -75,8 +75,7 @@ public class MicCamTutotorialStep1 extends AppCompatActivity {
 
     private void goToStep3() {
         hiddenMicButton.setClickable(false);
-        //chang instructionImage Pic
-
+        instructionImage.setImageResource(R.drawable.activatecamtaskmicmutedscaled);
         progressText.setText("Step 2");
         taskText.setText("Well done! Now click the camera button to enable it.");
         View.OnClickListener camButtonListener = new View.OnClickListener() {
