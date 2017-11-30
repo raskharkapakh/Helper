@@ -6,58 +6,88 @@
     android:layout_height="match_parent"
     tools:context="kr.kaist.helper.AppList">
 
-    <Button
-        android:id="@+id/skypeButton"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="0dp"
-        android:layout_height="76dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:onClick="openGuide"
-        android:text=" Videocall (Skype)"
-        android:textAlignment="viewEnd"
-        android:textAllCaps="false"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="76dp"
-        android:layout_height="76dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/skype_icon" />
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/applist" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="76dp"
-        android:layout_height="76dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/kakaotalk_icon" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="14dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@color/colorApplications" />
 
-    <Button
-        android:id="@+id/kakaoTalkButton"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="0dp"
-        android:layout_height="76dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Messages (Kakaotalk)"
-        android:textAlignment="viewEnd"
-        android:textAllCaps="false"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/skypeButton" />
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/skypeButton"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/bskype"
+                android:textAlignment="viewEnd"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/tossButton"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/btoss"
+                android:textAlignment="viewEnd"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/skypeButton" />
+
+            <Button
+                android:id="@+id/kakaoTaxiButton"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bkakaotaxi"
+                android:textAlignment="viewEnd"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tossButton" />
+
+            <Button
+                android:id="@+id/youtubeButton"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/byoutube"
+                android:textAlignment="viewEnd"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kakaoTaxiButton" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </FrameLayout>
+
 </android.support.constraint.ConstraintLayout>

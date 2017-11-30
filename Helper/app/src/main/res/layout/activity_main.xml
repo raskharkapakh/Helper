@@ -6,77 +6,69 @@
     android:layout_height="match_parent"
     tools:context="kr.kaist.helper.MainActivity">
 
-    <Button
-        android:id="@+id/applicationsButton"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="0dp"
-        android:layout_height="76dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="150dp"
-        android:backgroundTint="@color/colorApplications"
-        android:onClick="openAppList"
-        android:text=" Applications"
-        android:textAlignment="viewStart"
-        android:textAllCaps="false"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/dataSavingButton"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="0dp"
-        android:layout_height="76dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="@color/colorDataOFF"
-        android:onClick="DataOnOff"
-        android:text=" Data saving: ON"
-        android:textAlignment="viewStart"
-        android:textAllCaps="false"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/applicationsButton" />
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/main" />
 
-    <Button
-        android:id="@+id/settingsButton"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="0dp"
-        android:layout_height="76dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="@color/colorSettings"
-        android:onClick="openSettings"
-        android:text=" Settings"
-        android:textAlignment="viewStart"
-        android:textAllCaps="false"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dataSavingButton" />
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/exitButton"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="0dp"
-        android:layout_height="76dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="@color/colorExit"
-        android:onClick="exit"
-        android:text=" Exit"
-        android:textAlignment="viewStart"
-        android:textAllCaps="false"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/settingsButton" />
+            <Button
+                android:id="@+id/applicationsButton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="288dp"
+                android:layout_height="76dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="301dp"
+                android:backgroundTint="@color/colorApplications"
+                android:fontFamily="@font/y350"
+                android:onClick="openAppList"
+                android:text="어플리케이션 모음"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="26sp"
+                android:typeface="normal"
+                app:layout_constraintBottom_toTopOf="@+id/exitButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/exitButton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="288dp"
+                android:layout_height="76dp"
+                android:layout_marginBottom="150dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="9dp"
+                android:backgroundTint="@color/colorExit"
+                android:fontFamily="@font/y350"
+                android:onClick="exit"
+                android:text="나가기"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="26sp"
+                android:typeface="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/applicationsButton" />
+        </android.support.constraint.ConstraintLayout>
+
+    </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>

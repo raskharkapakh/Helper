@@ -37,9 +37,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        //Guide
+        //Skype Tutorial
         <activity
-            android:name=".Guide_list"
+            android:name=".SkypeTutorial"
             android:parentActivityName=".AppList">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
@@ -47,7 +47,41 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AppList" />
         </activity>
-        <service android:name=".TopService" />
+        //Tutorial add contact page 1
+        <activity
+            android:name=".AddContactTutorial1"
+            android:parentActivityName=".SkypeTutorial">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SkypeTutorial" />
+        </activity>
+        // Tutorial call someone page 1
+        <activity
+            android:name=".CallSomeoneTutorial1"
+
+            android:parentActivityName=".SkypeTutorial">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SkypeTutorial" />
+        </activity>
+        //Tutorial Test Mic and Cam page1
+        <activity
+            android:name=".MicCamTutotorialStep1"
+            android:parentActivityName=".SkypeTutorial">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SkypeTutorial" />
+
+
+        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
     </application>
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+
 </manifest>
