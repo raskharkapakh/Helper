@@ -37,7 +37,48 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+        //Skype Tutorial
+        <activity
+            android:name=".SkypeTutorial"
+            android:parentActivityName=".AppList">
 
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AppList" />
+        </activity>
+        //Tutorial add contact page 1
+        <activity
+            android:name=".AddContactTutorial1"
+            android:parentActivityName=".SkypeTutorial">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SkypeTutorial" />
+        </activity>
+        // Tutorial call someone page 1
+        <activity
+            android:name=".CallSomeoneTutorial1"
+
+            android:parentActivityName=".SkypeTutorial">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SkypeTutorial" />
+        </activity>
+        //Tutorial Test Mic and Cam page1
+        <activity
+            android:name=".MicCamTutotorialStep1"
+            android:parentActivityName=".SkypeTutorial">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SkypeTutorial" />
+
+
+        </activity>
+
+    
     </application>
+
 
 </manifest>

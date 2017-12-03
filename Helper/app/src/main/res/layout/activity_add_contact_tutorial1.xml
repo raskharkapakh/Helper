@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.kaist.helper.AddContactTutorial1">
+
+    <TextView
+        android:id="@+id/stepText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Step 1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text='Click on "contact book" icon.'
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stepText" />
+
+    <ImageView
+        android:id="@+id/instructionImage"
+        android:layout_width="287dp"
+        android:layout_height="530dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructionText" />
+
+    <Button
+        android:id="@+id/step2or5"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorTransparent"
+        android:onClick="goToStep2or5"
+        app:layout_constraintEnd_toEndOf="@+id/instructionImage"
+        app:layout_constraintStart_toStartOf="@+id/instructionImage"
+        app:layout_constraintTop_toTopOf="@+id/instructionImage" />
+
+    <Button
+        android:id="@+id/step3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/colorTransparent"
+        android:onClick="goToStep3"
+        app:layout_constraintBottom_toBottomOf="@+id/instructionImage"
+        app:layout_constraintEnd_toEndOf="@+id/instructionImage" />
+
+    <Button
+        android:id="@+id/step4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="13dp"
+        android:background="@color/colorTransparent"
+        android:onClick="goToStep4"
+        app:layout_constraintBottom_toTopOf="@+id/step3"
+        app:layout_constraintEnd_toEndOf="@+id/instructionImage" />
+
+    <Button
+        android:id="@+id/step5a"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorTransparent"
+        android:onClick="goToStep5"
+        app:layout_constraintEnd_toStartOf="@+id/step2or5"
+        app:layout_constraintStart_toStartOf="@+id/instructionImage"
+        app:layout_constraintTop_toTopOf="@+id/instructionImage" />
+
+    <Button
+        android:id="@+id/step5b"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorTransparent"
+        android:onClick="goToStep5"
+        app:layout_constraintEnd_toEndOf="@+id/instructionImage"
+        app:layout_constraintStart_toEndOf="@+id/step2or5"
+        app:layout_constraintTop_toTopOf="@+id/instructionImage" />
+
+    <Button
+        android:id="@+id/step6"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/colorTransparent"
+        android:onClick="goToStep6"
+        app:layout_constraintEnd_toEndOf="@+id/instructionImage"
+        app:layout_constraintStart_toStartOf="@+id/instructionImage"
+        app:layout_constraintTop_toBottomOf="@+id/step2or5" />
+
+    <Button
+        android:id="@+id/step7"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="300dp"
+        android:background="@color/colorTransparent"
+        android:onClick="goToStep7"
+        app:layout_constraintEnd_toEndOf="@+id/instructionImage"
+        app:layout_constraintStart_toStartOf="@+id/instructionImage"
+        app:layout_constraintTop_toTopOf="@+id/instructionImage" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/colorTransparent"
+        android:onClick="goToSkypeTutorialScreen"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/instructionImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
